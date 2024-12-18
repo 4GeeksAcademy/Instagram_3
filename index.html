@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+      <!--head-->
+    <nav class="navbar bg-light m-4 border-0">
+        <div class="container-fluid">
+          <p class="navbar-brand text-black" href="#">
+            <i class="fa-brands fa-instagram "></i>
+            <a><strong>Instagram</strong></a>
+          </p>
+          <div class="d-flex">
+            <!--Button zone-->
+              <!--New Post-->
+            <button type="button" class="btn bg-success text-light btn-lg mr-2" data-bs-toggle="modal" data-bs-target="#CreatePost"><a>Create a new post</a></button>
+            <div class="modal fade" id="CreatePost" tabindex="-1" aria-labelledby="CreatePost" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="CreatePost">Create a new post</h5>
+                    <button type="button" class="btn-close border-0 bg-white" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-x"></i></button> <!--Close Button-->
+
+                  </div>
+                  <div class="modal-body">
+                    <p><strong>Caption:</strong></p>
+                    <textarea class="w-100 border border-secondary-subtle" placeholder="Add the caption of your post here"></textarea>
+                    <button class="border border-1"><i class="fa-solid fa-camera"></i></button>
+                    <button class="border border-1"><i class="fa-solid fa-location-dot"></i></button>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-success text-white">Publish</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+              <!--Setting-->
+            <div class="btn-group">
+              <button class="btn bg-dark bg-gradient text-light btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+              </ul>
+
+            </div>
+            
+        </div>
+        </div>
+       
+      </nav>
+       <!--Change Mode Button-->
+       <div class=" text-center">
+       <div class="container">
+        <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square-full"></i></a>
+          </li>
+        </ul>
+          
+      </div>
+    </div>
+      <!--Photo Zone-->
+      <div class="tab-content mt-3" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <!--Photo Row 1-->
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <img src="https://www.clinicaveterinariaaguilar.es/wp-content/uploads/2020/01/cachorro.jpg" class="img-thumbnail m-2"> <!--Photo 1-->
+
+          </div>
+          <div class="col-4">
+            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2024/11/godzilla-4265280.jpg" class="img-thumbnail m-2"> <!--Photo 2-->
+          </div>
+          <div class="col-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cuesta_del_obispo_01.jpg/640px-Cuesta_del_obispo_01.jpg" class="img-thumbnail m-2"> <!--Photo 3-->
+          </div>
+        </div>
+        <!--Photo Row 2-->
+        <div class="row">
+          <div class="col-4">
+            <img src="https://www.oneair.es/wp-content/uploads/2023/03/10-cuirosidades-sobre-viajar-en-avion.jpg" class="img-thumbnail m-2"> <!--Photo 4-->
+
+          </div>
+          <div class="col-4">
+            <img src="https://images.ctfassets.net/denf86kkcx7r/4IPlg4Qazd4sFRuCUHIJ1T/f6c71da7eec727babcd554d843a528b8/gatocomuneuropeo-97?fm=webp&w=612" class="img-thumbnail m-2"> <!--Photo 5-->
+          </div>
+          <div class="col-4">
+            <img src="https://www.ambientum.com/wp-content/uploads/2024/06/pezglobo.jpg" class="img-thumbnail m-2"> <!--Photo 6-->
+          </div>
+          
+        </div>
+        <!--Photo Row 3-->
+        <div class="row">
+          <div class="col-4">
+            <img src="https://mdminteriorismo.es/wp-content/uploads/2020/08/Como_crear_una_zona_de_estudio_en_casa_2.jpg" class="img-thumbnail m-2"> <!--Photo 7-->
+
+          </div>
+          <div class="col-4">
+            <img src="https://portalcomunicacion.uah.es/.galleries/Imagenes-Curso-2023-24/Diario-Digital/Actualidad/Aurora-boreal.jpg" class="img-thumbnail m-2"> <!--Photo 8-->
+          </div>
+          <div class="col-4">
+            <img src="https://s1.elespanol.com/2024/02/05/actualidad/830427673_239689135_1706x960.jpg" class="img-thumbnail m-2"> <!--Photo 9-->
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    
+      <!--Photo List-->
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="container">
+          <!--Photo 1-->
+          <div class="row">
+            <div class="col-12 mb-4 d-flex justify-content-center">
+            <div class="card" style="width: 40rem;">
+              <img src="https://www.clinicaveterinariaaguilar.es/wp-content/uploads/2020/01/cachorro.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Perro</h5>
+                <p class="card-text">Por algunos llamado el mejor amigo del hombre, a veces animales de compañia y otras veces tienen roles con la policia, guía para personas sin vista o incluso recomendados por psicologos como ayuda para tratar la depresión.</p>
+              </div>
+            </div>
+          </div>
+          
+            <!--Photo 2-->
+            <div class="col-12 mb-4 d-flex justify-content-center">
+            <div class="card" style="width: 40rem;">
+              <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2024/11/godzilla-4265280.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Godzilla</h5>
+                <p class="card-text">Una de las criaturas de ficción más poderosas y que a tenido numerosas adaptaciones en los ultimos años, esta imagen es de la pelicula "Godzilla x Kong: The New Empire".</p>
+              </div>
+            </div>
+          </div>
+            <!--Photo 3-->
+            <div class="col-12 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 40rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cuesta_del_obispo_01.jpg/640px-Cuesta_del_obispo_01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Vista desde la montaña</h5>
+                  <p class="card-text">Una muy buena vista desde la montaña contemplando la naturaleza, recomendable para una escapada de la ciudad ruidosa</p>
+                </div>
+              </div>
+            </div>
+            <!--Photo 4-->
+            <div class="col-12 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 40rem;">
+                <img src="https://www.oneair.es/wp-content/uploads/2023/03/10-cuirosidades-sobre-viajar-en-avion.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Avión en vuelo</h5>
+                  <p class="card-text">Un avión en vuelo durante el atardecer, buena vista y buen metodo para viajar a zonas lejanas.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Photo 5-->
+            <div class="col-12 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 40rem;">
+                <img src="https://images.ctfassets.net/denf86kkcx7r/4IPlg4Qazd4sFRuCUHIJ1T/f6c71da7eec727babcd554d843a528b8/gatocomuneuropeo-97?fm=webp&w=612" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Gato</h5>
+                  <p class="card-text">Un felino muy visto como animal de compañia, se dice que son solitarios pero dependiendo de cada uno pueden llegar a ser muy cariñosos</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Photo 6-->
+            <div class="col-12 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 40rem;">
+                <img src="https://www.ambientum.com/wp-content/uploads/2024/06/pezglobo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pez Globo</h5>
+                  <p class="card-text">Pez muy curioso ya que se infla cuando detecta una amenaza para dañar con su veneno, su comercio esta prohibido debido al peligro que puede llevar ingerirlo.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Photo 7-->
+            <div class="col-12 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 40rem;">
+                <img src="https://mdminteriorismo.es/wp-content/uploads/2020/08/Como_crear_una_zona_de_estudio_en_casa_2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Escritorio</h5>
+                  <p class="card-text">Un escritorio con un Pc Portatil, ideal lugar para trabajar a distancia comodamente.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Photo 8-->
+            <div class="col-12 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 40rem;">
+                <img src="https://portalcomunicacion.uah.es/.galleries/Imagenes-Curso-2023-24/Diario-Digital/Actualidad/Aurora-boreal.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aurore Boreal</h5>
+                  <p class="card-text">Curioso fenomeno natural, suelen llamar la atención por su belleza pero tambien son una tormenta electrica que puede llegar a conllevar un peligro. Para algunos tienen significados espirituales.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Photo 9-->
+            <div class="col-12 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 40rem;">
+                <img src="https://s1.elespanol.com/2024/02/05/actualidad/830427673_239689135_1706x960.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Capibara</h5>
+                  <p class="card-text">Uno de los animales terrestres más sociables que existe, apenas llega a tener depredadores ya que incluso con estos llega a tener amistad como por ejemplo con cocodrilos que les ayudan a cruzar un lago sin ser devorados. Si te dicen que eres como un Capibara es buena señal.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+    </div>
+  </div>
+      </div>
+    
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
